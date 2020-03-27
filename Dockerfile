@@ -3,7 +3,6 @@ FROM clearlinux/mixer-ci:latest
 ENV LC_ALL="en_US.UTF-8"
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
-COPY entrypoint.sh /entrypoint.sh
 COPY --chown=clr:clr entrypoint.sh /home/clr/
 WORKDIR /home/clr/
 
